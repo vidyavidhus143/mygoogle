@@ -1,0 +1,236 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <br>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <input type="text" class="nvbr" value="MyGoogle" style="border:none; -webkit-text-fill-color :blue; background-color:transparent;">
+                        </a>
+                    </div>
+                    <br>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                            <li> <button type="button" class="btn btn-primary btn-sm bot">
+                                    <span class="glyphicon glyphicon-bold .navbar-right"></span> 
+                                  </button>&nbsp;&nbsp;&nbsp;
+                            </li>
+                            <li>
+                                    <button type="button" class="btn btn-success btn-sm itl">
+                                            <span class="glyphicon glyphicon-italic"></span>
+                                          </button>&nbsp;&nbsp;&nbsp;
+                            </li>
+                            <li>
+                                    <button type="button" class="btn btn-default btn-sm ul">
+                                            <span><u>U</u></span> 
+                                          </button>&nbsp;&nbsp;&nbsp;
+                            </li>
+                            <li>
+                                    <button type="button" class="btn btn-danger btn-sm rs">Remove Style</button>
+                            </li>
+                            
+                            
+                    </ul>
+				</div>
+		</nav>
+	<div class="container">
+        <div class="row text-center pad-top">
+		  <div class="col-md-4 col-sm-4 col-xs-12">
+		    <div class="panel panel-default ">
+			   <div class="panel-heading pwb" style="background-color: rgb(31, 31, 82) ;color:white;text-align: left">Play with button</div>
+               <div class="panel-body pb">
+			     <div class="panel panel-default ppd">
+				     <div class="panel-heading ph">For heading </div>
+					 <div class="panel-body">
+					     <a href="#" class="btn btn-primary pr">Primary </a>
+						 <a href="#" class="btn btn-danger dg">Danger </a>
+						 <a href="#" class="btn btn-success su">Success</a>
+					 </div>
+				 </div>
+				 <div class="panel panel-default fortext">
+				    <div class="panel-heading ft">For text </div>
+					<div class="panel-body">
+					   <button type="button" class="btn btn-outline-dark ol"style="border-color:#000000;color:black">Outline Dark</button>
+                       <button type="button" class="btn btn-sm btn-outline-info inf" style="border-color:blue; color:blue;">Info</button>
+                       <button type="button" class="btn btn-outline-secondary os"style="border-color:#404040;color:#404040">Outline Secondary</button>
+					</div>
+				 </div>
+			   </div>			   
+			</div>
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			     <a href="#" class="btn btn-primary btn-danger hiow">Hide/show</a>
+				 <a href="#" class="btn btn-warning faad">Fade</a>
+                 <a href="#" class="btn btn-primary sd">Slide</a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 col-sm-4 col-xs-12">
+		        <div class="panel panel-default">
+			        <div class="panel-heading ip">Image Position</div>
+			        <div class="panel-body">
+			             <div class="panel panel-default">
+				             <div class="panel-body pbody">
+				                 <img id="ig" class="igg" src="google.png" alt="Enter the image url" position="center" height="200px" width="200px">
+				             </div>
+				         </div>
+				         <div class="col-md-13">
+				                <input id="imgurl" name="imgurl" type="text" placeholder="Enter image url" class="form-control input-md">
+				         </div>
+				         <br>
+                         <div class="col-md-13">
+				                 <a href="#" class="btn btn-block btn-info mpl">Mouse Pointer Location</a>
+				         </div>
+			        </div>
+			    </div>
+	       </div>
+		  <div class="col-md-4 col-sm-4 col-xs-12">
+		      <div class="panel panel-default">
+			      <div class="panel-heading">Table</div>
+				  <div class="panel-body">
+				      <div class="row text-left pad-top">
+					      <div class="panel-body">
+						      <b>Play with text </b>
+							  <br><br>
+							  <div class="col-md-13">
+                                    <input id="tsh" name="tsh" type="text" placeholder="Type Something here" class="form-control input-md tsoh">
+                              </div>
+							  <br>
+                              <div class="col-md-13">
+                                    <a href="#" class="btn btn-block btn-default ts">Type Something above</a>
+                              </div>
+							  <br>
+                              <a href="#" class="btn btn-danger rm" >Remove</a>
+                              <br><br>
+                              <div class="col-md-13">
+                                    <input id="bt" name="bt" type="text" placeholder="Type remove..!!See the magic!!" class="form-control input-md setbt">
+                              </div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+		
+	</div>
+           <script>
+               $("document").ready(function(){
+			     $(".bot").click(function(){
+                    $(".nvbr").css({"font-weight":"bold"});
+                 })
+			     $(".itl").click(function(){
+                    $(".nvbr").css({"font-style":"italic"});
+                 })
+				 $(".ul").click(function(){
+                    $(".nvbr").css({"text-decoration":"Underline"});
+                 })
+                 $(".rs").click(function(){
+                    $(".nvbr").css({"text-decoration":"none" ,"font-style":"normal" ,"font-weight":"normal" });
+                 })
+				 $(".pr").click(function(){
+				    $(".ppd").removeClass("panel-danger");
+					$(".ppd").removeClass("panel-success");
+                    $(".ppd").addClass("panel-primary");
+                 })
+               
+                 $(".dg").click(function(){
+				    $(".ppd").removeClass("panel-primary");
+					$(".ppd").removeClass("panel-success");
+                    $(".ppd").addClass("panel-danger");
+                 })
+                 $(".su").click(function(){
+				    $(".ppd").removeClass("panel-primary");
+					$(".ppd").removeClass("panel-danger");
+                    $(".ppd").addClass("panel-success");
+            
+                 })
+				 $(".inf").click(function(){
+                     $(".fortext").css({"border-color":"#4db8ff"});
+                    $(".ft").css({"color":"#4db8ff"});
+                 })
+				 $(".ol").click(function(){
+                    $(".fortext").css({"border-color":"#212121"});
+                    $(".ft").css({"color":"#212121"});
+                 })
+				 $(".os").click(function(){
+                    $(".fortext").css({"border-color":"#666666"});
+                    $(".ft").css({"color":"#666666"});
+                 })
+				 $(".hiow").click(function(){
+                
+                   $(".pb").toggle();
+                 })
+                 $(".faad").click(function(){
+                
+                   $(".pb").fadeToggle("slow");
+                 })
+                 $(".sd").click(function(){
+                
+                   $(".pb").slideToggle();
+                 })
+				 $("#imgurl").keyup(function(){
+                
+                    var  a=$("#imgurl").val();
+                    $("#ig").attr("src",a);
+					if(a==''){
+					  $("#ig").attr("src","google.png");
+					}
+                 })
+				 $(".pbody").on("mousemove",function(event){
+                    $(".ip").text("Image Position "+event.pageX+"  "+event.pageY)
+                 })
+				 $(".pbody").mouseover(function(){
+                    $(".mpl").text("Inside");
+                    $(".mpl").removeClass("btn-danger");
+					$(".mpl").removeClass("btn-info");
+                    $(".mpl").addClass("btn-success");
+                 })
+				 $(".pbody").mouseout(function(){
+                   
+                    $(".mpl").text("Outside");
+					$(".mpl").removeClass("btn-success");
+					$(".mpl").removeClass("btn-info");
+                    $(".mpl").addClass("btn-danger")
+                 })
+				 $(".tsoh").on("input",function(){
+                    var c=$(".tsoh").val();
+                    if(c=='')
+                    {
+                        $(".ts").text("Type Something Above")   
+                    }
+                    else
+                    {
+                    $(".ts").text(c);
+                    }
+                 })
+				 $(".setbt").on("input",function(){
+                    var d=$(".setbt").val();
+					
+                    if(d=="erase"||d=="remove"||d=="delete")
+                    {
+                        $(".rm").hide();
+						
+                    }
+                    else if(d=='')
+                    {
+                        $(".rm").text("Remove");
+                    }
+                    else
+                    {
+                        $(".rm").text(d);
+                    }
+                 })
+			   })
+           </script>
+	
